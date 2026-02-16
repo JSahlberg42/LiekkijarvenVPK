@@ -1,9 +1,139 @@
 <!DOCTYPE html>
-<html>
-    <head>
+<html lang="fi">
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Roboto+Slab:wght@500;600;700&display=swap" rel="stylesheet">
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Liekkijärven VPK toiminta ja tehtävät">
+    <meta name="keywords" content="Palokunta, VPK, Toiminta, Pelastustoiminta">
+    <meta name="author" content="Jussi Sahlberg">
     <title>Toiminta - Liekkijärven VPK</title>
-    </head>
+  </head>
+
+  <body>
+    <!-- Header: page header section -->
+    <header>
+      <!-- Nav: site navigation area -->
+      <nav class="navbar">
+        <div class="nav-brand">
+          <img src="images/vpk-logo-blue.jpg" alt="Liekkijärven VPK logo" class="logo">
+          <div class="site-title"><a href="index.html" style="color: var(--teksti-vaalea); text-decoration: none;">Liekkijärven VPK</a></div>
+        </div>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-hidden="true">
+        <label for="menu-toggle" class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span class="sr-only">Valikko</span>
+        </label>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="toiminta.html">Toiminta</a></li>
+          <li><a href="liity.html">Liity</a></li>
+          <li><a href="tapahtumat.html">Tapahtumat</a></li>
+        </ul>
+      </nav>
+      <div class="hero-content">
+        <!-- h1: level-1 heading (page main title) -->
+        <h1>Toiminta sopimuspalokuntana</h1>
+        <!-- p: paragraph text -->
+        <p>Toimimme pelastuslaitoksen sopimuspalokuntana ja huolehdimme hälytysvalmiudesta, koulutuksesta ja turvallisuusviestinnästä.</p>
+      </div>
+    </header>
+    
+    <!-- Main: primary page content -->
+    <main class="container">
+      <!-- Section: grouped content block -->
+      <section class="content-block" style="padding: 2rem; border-radius: 8px; margin-bottom: 2rem;">
+        <!-- p: paragraph text -->
+        <p>Sopimus VPK:n ja pelastuslaitoksen välillä määrittää hälytysvalmiuden, koulutuksen sekä turvallisuusviestinnän roolin. Pidämme varallaoloa, harjoittelemme säännöllisesti ja viestimme arjen turvallisuudesta alueen asukkaille.</p>
+      </section>
+
+      <!-- Section: grouped content block -->
+      <section class="content-block" style="padding: 2rem; border-radius: 8px; margin-bottom: 2rem;">
+        <!-- h2: level-2 heading (section title) -->
+        <h2>Hälytysosasto</h2>
+        <!-- p: paragraph text -->
+        <p>Hälytysosasto tukee pelastuslaitosta sovitun valmiuden mukaisesti. Tehtävät vaihtelevat. Harjoittelemme viikoittain.</p>
+        <!-- p: paragraph text -->
+        <p>Hälytysosastoon voi hakea täysi-ikäinen, joka sitoutuu varallaoloon ja koulutukseen. Varallaolo on sovittua ja tapahtuu vuoroissa.</p>
+      </section>
+
+      <!-- Section: grouped content block -->
+      <section class="content-block" style="padding: 2rem; border-radius: 8px; margin-bottom: 2rem;">
+        <!-- h2: level-2 heading (section title) -->
+        <h2>Nuoriso-osasto</h2>
+        <!-- p: paragraph text -->
+        <p>Nuoret oppivat turvallisuustaitoja ohjatuissa harjoituksissa. Toiminta kehittää ryhmätyö- ja ensiaputaitoja.</p>
+        <!-- p: paragraph text -->
+        <p>Nuoriso-osasto on tarkoitettu 10-17-vuotiaille. Ohjaajat huolehtivat turvallisuudesta ja sisällöstä, joka etenee ikätason mukaan.</p>
+      </section>
+
+      <!-- Section: grouped content block -->
+      <section class="content-block" style="padding: 2rem; border-radius: 8px; margin-bottom: 2rem;">
+        <!-- h2: level-2 heading (section title) -->
+        <h2>Kalusto ja asema</h2>
+        <!-- p: paragraph text -->
+        <p>Kalustomme ja asemamme mahdollistavat nopean lähdön hälytystehtäviin ja turvalliset harjoitukset. Tutustu lyhyesti arjen ympäristöön kuvien kautta.</p>
+        <!-- div: generic container -->
+        <div class="image-grid">
+          <!-- figure: self-contained media with caption -->
+          <figure>
+            <!-- img: image element -->
+            <img src="images/vpk-kalusto-1.jpg" alt="Sammutusauto tallissa">
+            <!-- figcaption: caption for the figure -->
+            <figcaption>Sammutusauto tallissa</figcaption>
+          </figure>
+          <!-- figure: self-contained media with caption -->
+          <figure>
+            <!-- img: image element -->
+            <img src="images/vpk-harjoitus-2.jpg" alt="Sammutusharjoitus letkuilla">
+            <!-- figcaption: caption for the figure -->
+            <figcaption>Sammutusharjoitus letkuilla</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- Section: grouped content block -->
+      <section class="content-block" style="padding: 2rem; border-radius: 8px; margin-bottom: 2rem;">
+        <!-- h2: level-2 heading (section title) -->
+        <h2>Usein kysytyt kysymykset (FAQ)</h2>
+        <!-- div: generic container -->
+        <div class="faq-list">
+          <!-- h3: level-3 heading (question title) -->
+          <h3>Voinko aloittaa ilman aiempaa kokemusta?</h3>
+          <!-- p: paragraph text (answer) -->
+          <p>Kyllä. Saat perehdytyksen ja koulutuksen ennen hälytystoimintaan osallistumista.</p>
+          <!-- h3: level-3 heading (question title) -->
+          <h3>Kuinka usein harjoitukset ovat?</h3>
+          <!-- p: paragraph text (answer) -->
+          <p>Hälytysosastolla harjoittelemme viikoittain, nuoriso-osastolla ikätason mukaisesti.</p>
+          <!-- h3: level-3 heading (question title) -->
+          <h3>Miten varallaolo toimii?</h3>
+          <!-- p: paragraph text (answer) -->
+          <p>Varallaolo perustuu sovittuihin vuoroihin, joista saat tiedon hyvissä ajoin.</p>
+        </div>
+      </section>
+
+      <!-- Section: grouped content block -->
+      <section class="content-block" style="padding: 2rem; border-radius: 8px; margin-bottom: 2rem; text-align: center;">
+        <!-- h2: level-2 heading (section title) -->
+        <h2>Kiinnostuitko?</h2>
+        <!-- p: paragraph text -->
+        <p>Tule mukaan toimintaan tai kysy lisää.</p>
+        <!-- p: paragraph text with link -->
+        <p><a href="liity.html" class="cta-link">Siirry liittymään</a></p>
+      </section>
+    </main>
+    <!-- Footer: page footer section -->
+    <footer>
+      <!-- p: paragraph text, strong: emphasized text -->
+      <p>&copy; 2026 Liekkijärven VPK.<br>
+      Kiireellissä hätätilanteissa soita hätänumeroon <strong>112</strong></p>
+    </footer>
+  </body>
 </html>

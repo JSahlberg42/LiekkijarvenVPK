@@ -188,6 +188,24 @@ a:focus-visible {
     border: 1px solid var(--reunukset);
 }
 
+/* FAQ */
+.faq-list h3 {
+    margin: 1rem 0 0.5rem;
+}
+
+.faq-list h3:not(:first-child) {
+    border-top: 2px solid var(--reunukset);
+    padding-top: 1.25rem;
+}
+
+.faq-list h3:first-child {
+    margin-top: 0;
+}
+
+.faq-list p {
+    margin: 0 0 1rem 0;
+}
+
 /* CTA-painikkeet */
 .cta-button {
     background-color: var(--korostus-punainen);
