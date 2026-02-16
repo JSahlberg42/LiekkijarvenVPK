@@ -129,6 +129,11 @@ header {
     font-size: 1.5rem;
 }
 
+.nav-brand a {
+    color: var(--teksti-vaalea);
+    text-decoration: none;
+}
+
 .nav-menu {
     display: flex;
     list-style: none;
