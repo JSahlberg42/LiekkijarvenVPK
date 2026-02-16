@@ -137,6 +137,7 @@ All layouts designed for mobile first, then adapted for larger screens.
 - Follow the structure of existing pages
 - Include proper alt text for images
 - Maintain accessibility (ARIA labels, focus states)
+- Add short HTML comments that explain element names and heading levels (e.g., h2 = level-2 heading)
 
 ### Common structure for all pages:
 ```html
