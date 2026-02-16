@@ -1,9 +1,148 @@
 <!DOCTYPE html>
-<html>
-    <head>
+<html lang="fi">
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Roboto+Slab:wght@500;600;700&display=swap" rel="stylesheet">
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Liity Liekkijärven VPK:n jäseneksi">
+    <meta name="keywords" content="Palokunta, VPK, Jäsenyys, Liittyminen">
+    <meta name="author" content="Jussi Sahlberg">
     <title>Liity mukaan - Liekkijärven VPK</title>
-    </head>
+  </head>
+
+  <body>
+    <!-- Header: page header section -->
+    <header>
+      <!-- Nav: site navigation area -->
+      <nav class="navbar">
+        <div class="nav-brand">
+          <img src="images/vpk-logo-blue.jpg" alt="Liekkijärven VPK logo" class="logo">
+          <div class="site-title"><a href="index.html" style="color: var(--teksti-vaalea); text-decoration: none;">Liekkijärven VPK</a></div>
+        </div>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-hidden="true">
+        <label for="menu-toggle" class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span class="sr-only">Valikko</span>
+        </label>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="toiminta.html">Toiminta</a></li>
+          <li><a href="liity.html">Liity</a></li>
+          <li><a href="tapahtumat.html">Tapahtumat</a></li>
+        </ul>
+      </nav>
+      <div class="hero-content">
+        <!-- h1: level-1 heading (page main title) -->
+        <h1>Liity mukaan</h1>
+        <!-- p: paragraph text -->
+        <p>Matalan kynnyksen reitti mukaan: hälytysosasto, nuoriso-osasto tai tukijäsenyys.</p>
+      </div>
+    </header>
+    
+    <!-- Main: primary page content -->
+    <main class="container">
+      <!-- Section: grouped content block -->
+      <section class="content-block" style="padding: 2rem; border-radius: 8px; margin-bottom: 2rem;">
+        <!-- h2: level-2 heading (section title) -->
+        <h2>Ankkuroitu reitti mukaan</h2>
+        <!-- p: paragraph text -->
+        <p>Valitse sinulle sopiva tapa osallistua. Voit hypätä suoraan sinua kiinnostavaan osastoon.</p>
+        <!-- ul: unordered list -->
+        <ul>
+          <li><a href="#hly-osasto">Hälytysosasto</a></li>
+          <li><a href="#nuoriso">Nuoriso-osasto</a></li>
+          <li><a href="#tukijat">Tukijaksi / talkoolaiseksi</a></li>
+        </ul>
+      </section>
+
+      <!-- Section: grouped content block -->
+      <section class="content-block" id="hly-osasto" style="padding: 2rem; border-radius: 8px; margin-bottom: 2rem;">
+        <!-- h2: level-2 heading (section title) -->
+        <h2>Hälytysosasto</h2>
+        <!-- p: paragraph text -->
+        <p>Toivomme säännöllistä harjoitusosallistumista. Koulutamme tehtävään – aiempi kokemus ei ole välttämätön.</p>
+        <!-- h3: level-3 heading (subsection title) -->
+        <h3>Vaatimukset</h3>
+        <!-- ul: unordered list -->
+        <ul>
+          <li>Täysi-ikäisyys</li>
+          <li>Sitoutuminen viikoittaisiin harjoituksiin</li>
+          <li>Halukkuus osallistua hälytystehtäviin vuorojen mukaan</li>
+        </ul>
+        <!-- h3: level-3 heading (subsection title) -->
+        <h3>Odotukset</h3>
+        <!-- ul: unordered list -->
+        <ul>
+          <li>Osallistuminen koulutuksiin ja perehdytykseen</li>
+          <li>Yhteistyökyky ja turvallinen toimintatapa</li>
+        </ul>
+      </section>
+
+      <!-- Section: grouped content block -->
+      <section class="content-block" id="nuoriso" style="padding: 2rem; border-radius: 8px; margin-bottom: 2rem;">
+        <!-- h2: level-2 heading (section title) -->
+        <h2>Nuoriso-osasto</h2>
+        <!-- p: paragraph text -->
+        <p>Ikäraja 10–16 v (mukauta oman VPK:n rajoihin). Varusteet tarjotaan harjoituksiin.</p>
+        <!-- h3: level-3 heading (subsection title) -->
+        <h3>Vaatimukset</h3>
+        <!-- ul: unordered list -->
+        <ul>
+          <li>Ikäraja 10–16 vuotta</li>
+          <li>Huoltajan suostumus</li>
+        </ul>
+        <!-- h3: level-3 heading (subsection title) -->
+        <h3>Odotukset</h3>
+        <!-- ul: unordered list -->
+        <ul>
+          <li>Osallistuminen ohjattuihin harjoituksiin</li>
+          <li>Reilu ja turvallinen ryhmäkäyttäytyminen</li>
+        </ul>
+        <!-- figure: self-contained media with caption -->
+        <figure style="margin: 1.5rem 0 0;">
+          <img src="images/vpk-nuoriso-1.jpg" alt="Nuoret harjoituksissa" loading="lazy">
+          <figcaption>Nuoret harjoituksissa</figcaption>
+        </figure>
+      </section>
+
+      <!-- Section: grouped content block -->
+      <section class="content-block" id="tukijat" style="padding: 2rem; border-radius: 8px; margin-bottom: 2rem;">
+        <!-- h2: level-2 heading (section title) -->
+        <h2>Tukijaksi / talkoolaiseksi</h2>
+        <!-- p: paragraph text -->
+        <p>Voit tukea meitä liittymällä tukijäseneksi tai osallistumalla tapahtumiin vapaaehtoisena.</p>
+        <!-- h3: level-3 heading (subsection title) -->
+        <h3>Vaatimukset</h3>
+        <!-- ul: unordered list -->
+        <ul>
+          <li>Kiinnostus yhteisön tukemiseen</li>
+          <li>Sovittu osallistuminen tapahtumiin</li>
+        </ul>
+        <!-- h3: level-3 heading (subsection title) -->
+        <h3>Odotukset</h3>
+        <!-- ul: unordered list -->
+        <ul>
+          <li>Yhteistyö muiden vapaaehtoisten kanssa</li>
+          <li>Turvallisuusohjeiden noudattaminen</li>
+        </ul>
+        <!-- figure: self-contained media with caption -->
+        <figure style="margin: 1.5rem 0 0;">
+          <img src="images/vpk-yhteiso-1.jpg" alt="Vapaaehtoiset talkoissa" loading="lazy">
+          <figcaption>Vapaaehtoiset talkoissa</figcaption>
+        </figure>
+      </section>
+    </main>
+    <!-- Footer: page footer section -->
+    <footer>
+      <!-- p: paragraph text, strong: emphasized text -->
+      <p>&copy; 2026 Liekkijärven VPK.<br>
+      Kiireellissä hätätilanteissa soita hätänumeroon <strong>112</strong></p>
+    </footer>
+  </body>
 </html>
