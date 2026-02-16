@@ -23,6 +23,24 @@ body {
     line-height: 1.6;
 }
 
+/* Linkit */
+a {
+    color: var(--linkki);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: var(--linkki-hover);
+    text-decoration: underline;
+}
+
+a:focus-visible {
+    outline: 3px solid var(--linkki);
+    outline-offset: 2px;
+    border-radius: 2px;
+}
+
 /* Typografia */
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Roboto Slab', serif;
@@ -60,6 +78,23 @@ p {
     clip: rect(0, 0, 0, 0);
     white-space: nowrap;
     border-width: 0;
+}
+
+/* Layout */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+.cards-grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.content-block {
+    background-color: var(--toissijainen-harmaa);
+    border: 1px solid var(--reunukset);
 }
 
 /* Header ja navigaatio */
@@ -164,48 +199,6 @@ header {
     margin-bottom: 2rem;
 }
 
-/* Linkit */
-a {
-    color: var(--linkki);
-    text-decoration: none;
-    transition: color 0.2s ease;
-}
-
-a:hover {
-    color: var(--linkki-hover);
-    text-decoration: underline;
-}
-
-a:focus-visible {
-    outline: 3px solid var(--linkki);
-    outline-offset: 2px;
-    border-radius: 2px;
-}
-
-/* Taustalohkot */
-.content-block {
-    background-color: var(--toissijainen-harmaa);
-    border: 1px solid var(--reunukset);
-}
-
-/* FAQ */
-.faq-list h3 {
-    margin: 1rem 0 0.5rem;
-}
-
-.faq-list h3:not(:first-child) {
-    border-top: 2px solid var(--reunukset);
-    padding-top: 1.25rem;
-}
-
-.faq-list h3:first-child {
-    margin-top: 0;
-}
-
-.faq-list p {
-    margin: 0 0 1rem 0;
-}
-
 /* CTA-painikkeet */
 .cta-button {
     background-color: var(--korostus-punainen);
@@ -235,18 +228,6 @@ a:focus-visible {
 
 .cta-button:active {
     transform: translateY(0);
-}
-
-/* Container ja grid */
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 2rem 1rem;
-}
-
-.cards-grid {
-    display: grid;
-    gap: 1.5rem;
 }
 
 /* Kortit */
@@ -313,27 +294,37 @@ a:focus-visible {
     outline-offset: 2px;
 }
 
+/* FAQ */
+.faq-list h3 {
+    margin: 1rem 0 0.5rem;
+}
+
+.faq-list h3:not(:first-child) {
+    border-top: 2px solid var(--reunukset);
+    padding-top: 1.25rem;
+}
+
+.faq-list h3:first-child {
+    margin-top: 0;
+}
+
+.faq-list p {
+    margin: 0 0 1rem 0;
+}
+
+/* footer */
+footer {
+    background-color: var(--teksti-tumma);
+    color: var(--teksti-vaalea);
+    text-align: center;
+    padding: 1rem;
+    font-size: 14px;
+}
+
 /* ==================== RESPONSIIVISUUS ==================== */
 
 /* PUHELIN (ensisijainen): yksipalstainen, hamburger-valikko */
 @media (max-width: 767px) {
-    body {
-        font-size: 16px;
-        line-height: 1.6;
-    }
-    
-    h1 {
-        font-size: 28px;
-    }
-    
-    h2 {
-        font-size: 22px;
-    }
-    
-    h3 {
-        font-size: 18px;
-    }
-    
     .hamburger {
         display: flex;
     }
@@ -399,10 +390,6 @@ a:focus-visible {
         grid-template-columns: repeat(2, 1fr);
     }
     
-    .hamburger {
-        display: none;
-    }
-    
     .cta-button {
         font-size: 17px;
     }
@@ -450,17 +437,4 @@ a:focus-visible {
         font-size: 18px;
         padding: 16px 32px;
     }
-    
-    .hamburger {
-        display: none;
-    }
-}
-
-/* footer */
-footer {
-    background-color: var(--teksti-tumma);
-    color: var(--teksti-vaalea);
-    text-align: center;
-    padding: 1rem;
-    font-size: 14px;
 }
