@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fi"> <!-- Sivuston kieli -->
+<html lang="fi">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,10 +9,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Roboto+Slab:wght@500;600;700&display=swap" rel="stylesheet">
     <!-- Stylesheet -->
     <link rel="stylesheet" href="styles.css">
-    <meta name="description" content="Liekkijärven VPK">
-    <meta name="keywords" content="Palokunta, VPK, Liekkijärvi">
+    <meta name="description" content="Liekkijärven VPK yhteystiedot ja yhteyshenkilöt">
+    <meta name="keywords" content="Palokunta, VPK, Yhteystiedot, Asema, Yhteyshenkilöt">
     <meta name="author" content="Jussi Sahlberg">
-    <title>Liekkijärven VPK</title>
+    <title>Yhteystiedot - Liekkijärven VPK</title>
   </head>
 
   <body>
@@ -22,7 +22,7 @@
       <nav class="navbar">
         <div class="nav-brand">
           <img src="images/vpk-logo-blue.jpg" alt="Liekkijärven VPK logo" class="logo">
-          <h1>Liekkijärven VPK</h1>
+          <h1><a href="index.html">Liekkijärven VPK</a></h1>
         </div>
         <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-hidden="true">
         <label for="menu-toggle" class="hamburger">
@@ -39,41 +39,42 @@
       </nav>
       <div class="hero-content">
         <!-- h2: level-2 heading (page section title) -->
-        <h2>Sopimuspalokunta</h2>
+        <h2>Yhteystiedot</h2>
         <!-- p: paragraph text -->
-        <p>Toimimme pelastuslaitoksen sopimuspalokuntana. Harjoittelemme säännöllisesti ja tarjoamme mielenkiintoisen ja ilmaisen harrastuksen.</p>
-        <!-- a: link styled as button -->
-        <a href="liity.html" class="cta-button">Liity mukaan</a>
+        <p>Ota yhteytta ja loyda asemamme. Autamme mielellamme.</p>
       </div>
     </header>
     
     <!-- Main: primary page content -->
     <main class="container">
-      <section class="cards-grid">
-        <div class="card">
-          <div class="card-header">
-            <img src="images/vpk-hero-1.jpg" alt="VPK harjoitus pihalla" class="card-icon">
-            <h3>Mitä VPK tekee?</h3>
-          </div>
-          <p>Osallistumme pelastustoimintaan yhdessä pelastuslaitoksen kanssa.</p>
-          <a href="toiminta.html" class="card-link">Lue lisää</a>
-        </div>
-        <div class="card">
-          <div class="card-header">
-            <img src="images/vpk-hero-2.jpg" alt="Jäsenet" class="card-icon">
-            <h3>Tule mukaan</h3>
-          </div>
-          <p>Aloittaa voi ilman mitään kokemusta. Koulutamme tehtäviin sekä tarjoamme asianmukaiset varusteet. Harrastus on ilmaista.</p>
-          <a href="liity.html" class="card-link">Lue lisää</a>
-        </div>
-        <div class="card">
-          <div class="card-header">
-            <img src="images/vpk-hero-3.jpg" alt="Kalenteri" class="card-icon">
-            <h3>Yhteystiedot</h3>
-          </div>
-          <p>Löydät asemamme osoitteen, yhteyshenkilöt ja tärkeät yhteystiedot.</p>
-          <a href="yhteystiedot.html" class="card-link">Lue lisää</a>
-        </div>
+      <!-- Section: grouped content block -->
+      <section class="content-block" style="padding: 2rem; border-radius: 8px; margin-bottom: 2rem;">
+        <!-- p: paragraph text -->
+        <p>Ota rohkeasti yhteytta, jos haluat lisatietoa toiminnastamme tai tulla tutustumaan.</p>
+
+        <!-- h2: level-2 heading (section title) -->
+        <h2>Aseman osoite</h2>
+        <!-- ul: unordered list -->
+        <ul>
+          <li>Liekkijarventie 12, 00100 Liekkijarvi</li>
+          <li>Ovet auki harjoitusten aikaan torstaisin klo 18:00</li>
+        </ul>
+
+        <!-- h2: level-2 heading (section title) -->
+        <h2>Yhteyshenkilot</h2>
+        <!-- ul: unordered list -->
+        <ul>
+          <li>Palokunnan paallikko: Jussi Sahlberg</li>
+          <li>Varapaallikko: Anna Korhonen</li>
+        </ul>
+
+        <!-- h2: level-2 heading (section title) -->
+        <h2>Yhteystiedot</h2>
+        <!-- ul: unordered list -->
+        <ul>
+          <li>Puhelin: 040 123 4567</li>
+          <li>Sahkoposti: info@liekkijarvenvpk.fi</li>
+        </ul>
       </section>
     </main>
     <!-- Footer: page footer section -->
