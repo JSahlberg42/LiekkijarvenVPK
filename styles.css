@@ -105,6 +105,28 @@ figure {
     margin: 1.5rem 0 0;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.image-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: 1fr;
+}
+
+.image-grid figure {
+    margin: 0;
+}
+
+.image-grid figcaption {
+    margin-top: 0.5rem;
+    font-size: 0.95rem;
+    color: #3E4A59;
+}
+
 /* Header ja navigaatio */
 header {
     color: var(--teksti-vaalea);
@@ -402,6 +424,10 @@ footer {
     .cards-grid {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .image-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
     
     .cta-button {
         font-size: 17px;
@@ -436,6 +462,10 @@ footer {
     
     .cards-grid {
         grid-template-columns: repeat(3, 1fr);
+    }
+
+    .image-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
     
     .container {
