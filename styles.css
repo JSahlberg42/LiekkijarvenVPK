@@ -95,6 +95,14 @@ p {
 .content-block {
     background-color: var(--toissijainen-harmaa);
     border: 1px solid var(--reunukset);
+    padding: 2rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+/* Figure styling */
+figure {
+    margin: 1.5rem 0 0;
 }
 
 /* Header ja navigaatio */
