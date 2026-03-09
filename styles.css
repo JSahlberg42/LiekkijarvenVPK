@@ -154,9 +154,12 @@ header {
     gap: 15px;
 }
 
-.nav-brand h1 {
+.nav-brand h1,
+.nav-brand .site-title {
     margin: 0;
     font-size: 1.5rem;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
 }
 
 .nav-brand a {
@@ -224,7 +227,7 @@ header {
     text-align: left;
 }
 
-.hero-content h2 {
+.hero-content h1 {
     font-size: 2rem;
     margin-bottom: 1rem;
 }
