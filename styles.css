@@ -193,6 +193,11 @@ header {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
+.nav-menu a.active {
+    color: var(--teksti-tumma);
+    background-color: var(--teksti-vaalea);
+}
+
 .nav-menu a:focus-visible {
     outline: 2px solid var(--teksti-vaalea);
     outline-offset: 2px;
